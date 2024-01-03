@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<!--
+           .............
+       ,...................
+     ,..................========
+    ....~=##############=======+
+   ...##################=======.
+  ..=######+...,    +##=======,..
+  ..=###### ., .....  +=====+,....
+     ###########~,..  ======
+  .....##############~=====+....., pokemonshowdown.com
+  ..........###########====......
+    ............#######,==......
+  =###.,........+#####+ .......
+  ####################~......,
+  #################+======,
+     ++++++++++++ =======+
+
+Viewing source? We're open source! Check us out on GitHub!
+https://github.com/Zarel/Pokemon-Showdown
+https://github.com/Zarel/Pokemon-Showdown-Client (you are here)
+
+Also visit us in the Dev chatroom:
+https://psim.us/dev
+
+-->
+<meta charset="UTF-8" />
+<meta id="viewport" name="viewport" content="width=device-width" />
+<title>Showdown!</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<link rel="shortcut icon" href="favicon.ico" id="dynamic-favicon" />
+<link rel="icon" sizes="256x256" href="favicon-256.png" />
+<link rel="stylesheet" href="style/battle.css?0.48324428606124137" />
+<link rel="stylesheet" href="style/client.css?0.5941017143387799" />
+<link rel="stylesheet" href="style/sim-types.css?0.25873608962524286" />
+<link rel="stylesheet" href="style/utilichart.css?0.9533324456542602" />
+<link rel="stylesheet" href="style/font-awesome.css?0.7572112641825925" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="manifest" href="manifest.json" />
+<!--[if lte IE 8]><script>document.location.replace('http://pokemonshowdown.com/autodownload/win');</script><![endif]-->
+
+<meta name="google-signin-client_id" content="912270888098-jjnre816lsuhc5clj3vbcn4o2q7p4qvk.apps.googleusercontent.com">
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+if (!(/^(.*)\.psim\.us$/i.test(document.location.hostname))) {
+	ga('create', 'UA-26211653-1', 'pokemonshowdown.com');
+} else {
+	ga('create', 'UA-26211653-2', 'psim.us');
+}
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+<script>
+	window.onerror = function(err, uri, line) {
+		var msg = uri + ':' + line + ': ' + err;
+		if ('ga' in window) {
+			ga('send', 'event', 'Client error', msg);
+		} else {
+			alert('ERROR: ' + msg);
+		}
+		return false;
+	};
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+!function(e){var s=new XMLHttpRequest;s.open("GET","https://api.enthusiastgaming.net/scripts/cdn.enthusiast.gg/script/eg-aps/production/eg-aps-bootstrap.bundle.js?site=pokemonshowdown.com",!0),s.onreadystatechange=function(){var t;4==s.readyState&&(200<=s.status&&s.status<300||304==s.status)&&((t=e.createElement("script")).type="text/javascript",t.text=s.responseText,e.head.appendChild(t))},s.send(null)}(document);
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-54HBZTH');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54HBZTH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<style>
+	#eg-ccpa-msg-id { position: absolute; top: 100%; padding: 10px 20px !important; font-size: 9pt !important; text-align: left !important; text-shadow: 0 0 3px #000, 0 0 3px #000, 0 0 3px #000; }
+</style>
+
+
+<div id="header" class="header">
+	<img class="logo" src="pokemonshowdownbeta.png" srcset="pokemonshowdownbeta@2x.png 2x" alt="Pok&eacute;mon Showdown! (beta)" width="146" height="44" /><div class="maintabbarbottom"></div>
+</div>
+<div class="ps-room scrollable" id="mainmenu"><div class="mainmenuwrapper">
+	<div class="leftmenu">
+		<div class="activitymenu">
+			<div class="pmbox">
+				<div class="pm-window news-embed" data-newsid="195">
+					<h3><button class="closebutton" tabindex="-1"><i class="fa fa-times-circle"></i></button><button class="minimizebutton" tabindex="-1"><i class="fa fa-minus-circle"></i></button>News</h3>
+					<div class="pm-log" style="max-height:none">
+						<div class="newsentry" data-newsid="195" data-date="1703854414"><h4>The Indigo Disk Official Giveaway</h4><p>Join the <a href="wifi" target="_blank">Wi-Fi room</a> on Saturday, December 30th from 4 PM GMT to celebrate the release of the Indigo Disk DLC with a special themed Giveaway! Don't miss your chance to win lots of shiny and battle-ready Pokemon!</p><p>&mdash;<strong>Syrinix %◕‿‿◕%</strong> <small class="date">on Dec 29, 2023</small></p></div><div class="newsentry" data-newsid="194" data-date="1703557969"><h4>Smogon Premier League XV Signups </h4><p><a href="https://www.smogon.com/forums/threads/spl-xv-player-signups-use-the-form-in-the-op-to-sign-up.3733115/" target="_blank">Player signups for the 15th edition of Smogon Premier League</a>, the longest running team tournament on the site, are now open! 10 teams will draft from the signup pool to compete over the course of 11 weeks until only one team is left standing.</p><p>&mdash;<strong>Syrinix %◕‿‿◕%</strong> <small class="date">on Dec 25, 2023</small></p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mainmenu">
+			<div id="loading-message" class="mainmessage">Initializing... <noscript>FAILED<br /><br />Pok&eacute;mon Showdown requires JavaScript.</noscript></div>
+		</div>
+	</div>
+	<div class="rightmenu">
+	</div>
+	<div class="mainmenufooter">
+		<div class="bgcredit"></div>
+		<small><a href="https://dex.pokemonshowdown.com/" target="_blank">Pok&eacute;dex</a> | <a href="https://replay.pokemonshowdown.com/" target="_blank">Replays</a> | <a href="https://pokemonshowdown.com/rules" target="_blank">Rules</a> | <a href="https://pokemonshowdown.com/credits" target="_blank">Credits</a> | <a href="http://smogon.com/forums/" target="_blank">Forum</a> | <a href="https://pokemonshowdown.com/privacy" target="_blank">Privacy policy</a></small>
+	</div>
+</div></div>
+<script>
+	var LM = document.getElementById('loading-message');
+	LM.innerHTML += ' DONE<br />Loading libraries...';
+</script>
+<script nomodule src="js/lib/ps-polyfill.js"></script>
+<script src="config/config.js?d0aecf9b"></script>
+<script src="js/lib/jquery-2.2.4.min.js"></script>
+<script src="js/lib/jquery-cookie.js"></script>
+<script src="js/lib/autoresize.jquery.min.js?0.9239046038139391"></script>
+<script src="js/battle-sound.js?0.1955812567785571"></script>
+<script src="js/lib/html-css-sanitizer-minified.js?0.23389779285259782"></script>
+<script src="js/lib/lodash.core.js?0.6861614763500266"></script>
+<script src="js/lib/backbone.js?0.41461861060228555"></script>
+<script src="js/lib/d3.v3.min.js"></script>
+
+<script>
+	LM.innerHTML += ' DONE<br />Loading data...';
+</script>
+
+<script src="js/battledata.js?0.5366422296159992"></script>
+<script src="js/storage.js?0.7710688291729657"></script>
+<script src="data/pokedex-mini.js?0.5842314779687379"></script>
+<script src="data/typechart.js?0.413698461425112"></script>
+<script src="js/battle.js?0.878419770205183"></script>
+<script src="js/lib/sockjs-1.4.0-nwjsfix.min.js"></script>
+<script src="js/lib/color-thief.min.js"></script>
+
+<script>
+	LM.innerHTML += ' DONE<br />Loading client...';
+</script>
+
+<script src="js/client.js?0.9640434383253622"></script>
+<script src="js/client-topbar.js?0.11288571860778496"></script>
+<script src="js/client-mainmenu.js?0.8320416506271862"></script>
+<script src="js/client-teambuilder.js?0.9776257516995257"></script>
+<script src="js/client-ladder.js?0.050711648419392574"></script>
+<script src="js/client-chat.js?0.25883122765735367"></script>
+<script src="js/client-chat-tournament.js?0.9744161031171716"></script>
+<script src="js/battle-tooltips.js?0.6693295316816084"></script>
+<script src="js/client-battle.js?0.8505067283124204"></script>
+<script src="js/client-rooms.js?0.7740538962166077"></script>
+<script src="data/graphics.js?0.47193007509268114"></script>
+
+<script>
+	// framebust - see https://owasp.org/www-pdf-archive/OWASP_AppSec_Research_2010_Busting_Frame_Busting_by_Rydstedt.pdf
+	// should be robust against reflective XSS filters and navigation interception
+	var app;
+	if (self === top) {
+		app = new App();
+	} else {
+		LM.innerHTML += ' IN FRAME<br />Please visit Showdown directly.';
+		top.location = self.location;
+	}
+</script>
+
+<script src="data/pokedex.js?0.8511332753615479"></script>
+<script src="data/moves.js?0.3613543499710752"></script>
+<script src="data/items.js?0.9378378938200702"></script>
+<script src="data/abilities.js?0.5413440642919565"></script>
+
+<script src="data/search-index.js?0.3972636606496136"></script>
+<script src="data/teambuilder-tables.js?0.3405180834430619"></script>
+<script src="js/battle-dex-search.js?0.07075728499714495"></script>
+<script src="js/search.js?0.22074824464608378"></script>
+
+<script src="data/aliases.js?0.4267613030387838" async></script>
+<script src="js/clean-cookies.php" async></script>
